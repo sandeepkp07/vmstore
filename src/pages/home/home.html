@@ -1,14 +1,27 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
+  <ion-navbar align="middle" no-border-bottom color="white">
+    <img src="https://stage.nayomi.com/img/logo.b9e5f14e.png" alt="icon">
+    <ion-title text-center>
+
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <style>
+    .button{
+      font-size:18px;
+      background-color:#f599ba;
+    }
+    .toolbar-content toolbar-content-md{
+      color:red;
+    }
+
+  </style>
+
+  <button ion-button full (click)="page2()" class="button">Butterfly</button>
+  <br/>
+  <button ion-button full (click)="page3()" class="button">Gondola</button>
+  <br/>
+  <button ion-button full (click)="page4()" class="button">Princess Palace</button>
 </ion-content>
